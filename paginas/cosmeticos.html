@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ella's | Cosméticos</title>
+    <link rel="shortcut icon" href="../multimedia/favicon3.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/iconos.css">
+</head>
+<body class="body__cosmeticos">
+    <header class="header">
+        <div class="header__logo">
+            <a href="../index.html"><span class="logo__titulo">ELLA'S</span>
+                <span class="logo__subtitulo">ANTONELLA'S COSMETICS</span></a>
+        </div>
+        <nav class="header__nav">
+            <div class="nav__hamburguesa">
+            <ul class="menu">
+                <li><a href="cosmeticos.html">COSMETICOS</a></li>
+                <ul class="submenu">
+                    <li><a href="#">Rostro</a></li>
+                    <li><a href="#">Labios</a></li>
+                    <li><a href="#">Ojos</a></li>
+                    <li><a href="#">Brochas & Accesorios</a></li>
+                    <li><a href="#">Piel</a></li>
+                </ul>
+                <li><a href="../paginas/escuela.html">ESCUELA</a></li>
+                <ul class="submenu">
+                    <li><a href="#">Curso de Maquillaje</a></li>
+                    <li><a href="#">Taller Especial Novias</a></li>
+                    <li><a href="#">Taller Marketing para Maquilladores</a></li>
+                </ul>
+                <li><a href="../paginas/servicios.html">SERVICIOS</a></li>
+                <ul class="submenu">
+                    <li><a href="#">Maquillaje & Peinado Novias</a></li>
+                    <li><a href="#">Maquillaje & Peinado Eventos</a></li>
+                    <li><a href="#">Maquillaje & Peinado Moda & Producciones</a></li>
+                </ul>
+                <li><a href="../paginas/productos.html">NOSOTRAS</a></li>
+                <li><a href="../paginas/contacto.html">CONTACTO</a></li>
+            </ul>
+            </div>
+            <div class="nav__iconos">
+                <input type="text" placeholder="SEARCH">
+                <button type="submit"><span class="icon-search"></span></button>
+                <a href="#"><span class="icon-cart"></span></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero__cosmeticos">
+            <h1>COSMÉTICOS</h1> 
+    </section>
+    <section class="listaCategorias">
+        <ul>
+            <li><a href="#labios">LABIOS</a></li>
+            <li><a href="#rostro">ROSTRO</a></li>
+            <li><a href="#ojos">OJOS</a></li>
+            <li><a href="#brochas">BROCHAS & ACCESORIOS</a></li>
+            <li><a href="#piel">PIEL</a></li>
+        </ul>
+    </section>
+    <section class="cosmeticos">
+        <h2 id="labios">LABIOS</h2>
+        <form class="ordenar">
+            <label for="secciones">Ordenar por:</label>
+            <select name="secciones">
+                <option value="vendidos">Más Vendidos</option>
+                <option value="precioMayor">Precio: Mayor a Menor</option>
+                <option value="precioMenor">Precio: Menor a Mayor</option>
+                <option value="a">A-Z</option>
+                <option value="z">Z-A</option>
+                <option value="nuevo">Más Nuevo al más Viejo</option>
+                <option value="viejo">Más Viejo al más Nuevo</option>
+            </select>
+        </form>
+        <article class="container__productos">
+        <div class="producto">
+            <img src="../multimedia/producto5.png" alt="imagen-labial">
+            <h4>IT'S THE GLOSS FOR ME LIP SHINE LACQUER</h4>
+            <p>$1240 <span>$1600</span></p>
+            <button>AÑADIR AL CARRITO</button>
+        </div>
+        <div class="producto">
+            <img src="../multimedia/producto1.png" alt="imagen-labial">
+            <h4>EVERYTHING AND MORE LIP SHINE LACQUER</h4>
+            <p>$1240 <span>$1600</span></p>
+            <button>AÑADIR AL CARRITO</button>
+        </div>
+        <div class="producto carrusel-mobile">
+            <img src="../multimedia/producto2.png" alt="imagen-labial">
+            <h4>FELT CUTE LIP SHINE LACQUER</h4>
+            <p>$1240<span>$1600</span></p>
+            <button>AÑADIR AL CARRITO</button>
+        </div>
+        <div class="producto carrusel-mobile">
+            <img src="../multimedia/producto3.png" alt="imagen-labial">
+            <h4>DON'T @ ME LIP SHINE LACQUER</h4>
+            <p>$1240 <span>$1600</span></p>
+            <button>AÑADIR AL CARRITO</button>
+        </div>
+        <div class="producto carrusel-mobile">
+            <img src="../multimedia/producto4.png" alt="imagen-labial">
+            <h4>YOU'RE CUTE JEANS LIP SHINE LACQUER</h4>
+            <p>$1240 <span>$1600</span></p>
+            <button>AÑADIR AL CARRITO</button>
+        </div>
+        <div class="producto carrusel-mobile">
+            <img src="../multimedia/producto6.png" alt="imagen-labial">
+            <h4>LOVE BITE MATTE LIQUID LIPSTICK</h4>
+            <p>$1240 <span>$1600</span></p>
+            <button>AÑADIR AL CARRITO</button>
+        </div>
+        <div class="producto carrusel-mobile">
+            <img src="../multimedia/producto7.png" alt="imagen-labial">
+            <h4>CALL ME MATTE LIQUID LIPSTICK</h4>
+            <p>$1240 <span>$1600</span></p>
+            <button>AÑADIR AL CARRITO</button>
+        </div>
+        <div class="producto carrusel-mobile">
+            <img src="../multimedia/producto8.png" alt="imagen-labial">
+            <h4>KRISTEN MATTE LIQUID LIPSTICK</h4>
+            <p>$1240 <span>$1600</span></p>
+            <button>AÑADIR AL CARRITO</button>
+        </div>
+    </article>
+    </section>
+    <div>
+        <img src="../multimedia/whatsapp1.png" alt="icono-whatsapp" class="whatsapp__icono">
+    </div>
+    <footer>
+        <p>Política de Privacidad | Términos de Uso</p>
+        <p>Copyright &copy; Antonella's Cosmetics 2022</p>
+    </footer>
+</body>
+</html>
