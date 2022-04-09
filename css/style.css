@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+
+
 /* -------INDEX-------INDEX-------INDEX-------INDEX--------------INDEX-------INDEX------- */
 body{
     font-family: 'Roboto', sans-serif;
@@ -457,6 +462,10 @@ footer p{
     }
 }
 
+
+
+
+
 /*-------COSMETICOS-------COSMETICOS-------COSMETICOS-------COSMETICOS--------------COSMETICOS-------COSMETICOS */
 .body__cosmeticos{
     display: grid;
@@ -572,10 +581,6 @@ footer p{
 .cosmeticos .container__productos .producto button:hover{
     background-color: black;
 }
-/* .container__productos .producto .button__centrar{
-    position: relative;
-    top: 18px;
-} */
 
 
 
@@ -682,9 +687,27 @@ footer p{
         display: none;
     }
 }
-/*-------ESCUELA-------ESCUELA-------ESCUELA-------ESCUELA--------------ESCUELA-------ESCUELA------- */
 
+
+
+
+
+/* /*-------ESCUELA-------ESCUELA-------ESCUELA-------ESCUELA--------------ESCUELA-------ESCUELA------- */
+.body__escuela{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 130px 550px 150px 502px 100px;
+    grid-template-areas:
+    "header header"
+    "hero hero"
+    "categorias categorias"
+    "programa programa"
+    "footer footer";
+}
 /* -------------------- HERO ------------------------ */
+.hero__escuela{
+    grid-area: hero;
+}
 .hero__escuela h1{
     color: black;
     background-color: white;
@@ -699,13 +722,14 @@ footer p{
     bottom: 25px;
     z-index: 2;
 }
-
 .hero__escuela iframe{
     position: relative;
     bottom: 45px;
 }
-
 /* -------------------- PROGRAMA ------------------------ */
+.curso__programa{
+    grid-area: programa;
+}
 .curso__programa h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 40px;
@@ -713,18 +737,35 @@ footer p{
     margin-left: 20px;
 }
 .curso__programa div{
-    background-color: rgb(136, 136, 136);
-    width: 30%;
-    height: 300px;
-    margin-left: 200px;
-    padding: 20px;
+    background-color: rgb(221, 0, 18);
+    color: white;
+    width: 40%;
+    height: 329px;
+    margin-left: 100px;
+    padding: 37px;
     overflow: auto;
     display: inline-block;
+}
+.curso__programa div h6{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: white;
+    padding-bottom: 10px;
 }
 .curso__programa button{
     position: relative;
     left: 100px;
     top: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+}
+.curso__programa button:hover {
+    background-color: black;
+    color: white;
 }
 .curso__programa .curso__img{
     width: 230px;
@@ -732,17 +773,24 @@ footer p{
     display: inline-block;
     position: relative;
     left: 100px;
-}
+} 
+
+
+
+
+
 /*-------SERVICIOS-------SERVICIOS-------SERVICIOS-------SERVICIOS--------------SERVICIOS-------SERVICIOS */
-.body__escuela{
+.body__servicios{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 130px 680px 150px 2000px 100px;
+    grid-template-rows: 130px 680px 150px 640px 496px 550px 100px;
     grid-template-areas:
     "header header"
     "hero hero"
     "categorias categorias"
-    "programa imagen"
+    "imagenUno texto"
+    "calendario imagenDos"
+    "imagenTres form"
     "footer footer";
 }
 /* -------------------- HERO ------------------------ */
@@ -766,23 +814,21 @@ footer p{
     bottom: 25px;
 }
 /* -------------------- CATEGORIAS ------------------------ */
-/* .listaCategorias{
+.listaCategorias{
     grid-area: categorias;
 }
 .listaCategorias ul{
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    position: relative;
-    top: 60px;
+    flex-flow: row wrap;
 }
 .listaCategorias li{
     display: inline-block;
 }
+
 .listaCategorias li a{
     text-decoration: none;
     color: white;
-    padding: 10px 50px;
+    padding: 10px 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     background-color: black;
@@ -790,9 +836,87 @@ footer p{
 .listaCategorias li:hover a{
     background-color: rgb(221, 0, 18);
 }
- */
+/* -------------------- info ------------------------ */
+.moda__img{
+    grid-area: imagenUno;
+    margin: 20px;
+}
+.moda__img h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    padding: 4px;
+    margin-left: 30px;
+}
+.moda__img h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    padding: 4px;
+    margin-left: 30px;
+}
+.moda__img img{
+    width: 344px;
+    height: 480px;
+    margin: 20px;
+    position: relative;
+    left: 107px;
+}
+.moda__info{
+    grid-area: texto;
+    padding: 240px 100px 0px 30px;
+    font-size: 20px;
+}
+.moda__calendario{
+    grid-area: calendario;
+}
+.moda__calendario iframe{
+    margin-left: 100px;
+    padding: 20px;
+}
+.moda__imgDos{
+    grid-area: imagenDos;
+}
+.moda__imgDos img{
+    width: 381px;
+    height: 476px;
+    position: relative;
+    left: 71px;
+}
+.moda__imgTres{
+    grid-area: imagenTres;
+}
+.moda__imgTres img{
+    width: 344px;
+    height: 480px;
+    margin-left: 20px;
+    position: relative;
+    left: 107px;
+}
+.moda__form{
+    grid-area: form;
+}
+.moda__form form{
+    width: 450px;
+    position: relative;
+    left: 71px;
+    top: 120px;
+}
+.moda__form form .reservarFecha{
+    width: 50%;
+    color: white;
+    background-color: rgb(221, 0, 18);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    border: 2px solid black;
+    padding: 4px;
+    cursor: pointer;
+}
+
+
+
+
+
 /*-------NOSOTRAS-------NOSOTRAS-------NOSOTRAS-------NOSOTRAS--------------NOSOTRAS-------NOSOTRAS */
-.body__nosotras{
+/* .body__nosotras{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 130px 680px 150px 2000px 100px;
@@ -802,9 +926,9 @@ footer p{
     "categorias categorias"
     "programa imagen"
     "footer footer";
-}
+} */
 /* -------------------- HERO ------------------------ */
-.hero__nosotras{
+/* .hero__nosotras{
     grid-area: hero;
     background-image: url(../multimedia/nosotras3.jpg);
     background-size: cover;
@@ -822,7 +946,7 @@ footer p{
     margin-left: 20px;
     position: relative;
     bottom: 25px;
-}
+} */
 /*-------CONTACTO-------CONTACTO-------CONTACTO-------CONTACTO--------------CONTACTO-------CONTACTO------- */
 .body__contacto{
     font-family: 'Roboto', sans-serif;
