@@ -999,6 +999,7 @@ footer p{
     grid-area: ellas;
 }
 .container__ellas p{
+    background-color: green;
     padding: 40px;
     margin: 10px 30px;
 }
