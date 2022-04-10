@@ -916,19 +916,20 @@ footer p{
 
 
 /*-------NOSOTRAS-------NOSOTRAS-------NOSOTRAS-------NOSOTRAS--------------NOSOTRAS-------NOSOTRAS */
-/* .body__nosotras{
+.body__nosotras{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 130px 680px 150px 2000px 100px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 130px 680px 202px 680px 202px 100px;
     grid-template-areas:
-    "header header"
-    "hero hero"
-    "categorias categorias"
-    "programa imagen"
-    "footer footer";
-} */
-/* -------------------- HERO ------------------------ */
-/* .hero__nosotras{
+    "header header header"
+    "hero hero hero"
+    "nosotras nosotras nosotras"
+    "imagen imagen imagen"
+    "ellas ellas ellas"
+    "footer footer footer";
+}
+/* -------------------- NOSOTRAS ------------------------ */
+.hero__nosotras{
     grid-area: hero;
     background-image: url(../multimedia/nosotras3.jpg);
     background-size: cover;
@@ -946,7 +947,66 @@ footer p{
     margin-left: 20px;
     position: relative;
     bottom: 25px;
-} */
+}
+.hero__nosotras h3{
+    color: rgb(255 255 255 / 32%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 224px;
+    height: 468px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* -------------------- ELLAS ------------------------ */
+.container__nosotras{
+    grid-area: nosotras;
+}
+.container__nosotras p{
+    padding: 40px;
+    margin: 10px 30px;
+}
+.nuestraMision{
+    grid-area: imagen;
+    background-image: url(../multimedia/mision5.jpeg);
+    background-size: cover;
+    background-position: center center;
+    margin-top: 40px;
+}
+.nuestraMision h2{
+    color: black;
+    background-color: white;
+    padding: 10px;
+    display: inline-block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    border: 2px solid black;
+    margin-left: 20px;
+    position: relative;
+    bottom: 25px;
+}
+.nuestraMision h3{
+    color: rgb(255 255 255 / 32%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 224px;
+    height: 468px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container__ellas{
+    grid-area: ellas;
+}
+.container__ellas p{
+    padding: 40px;
+    margin: 10px 30px;
+}
+
+
+
+
+
 /*-------CONTACTO-------CONTACTO-------CONTACTO-------CONTACTO--------------CONTACTO-------CONTACTO------- */
 .body__contacto{
     font-family: 'Roboto', sans-serif;
