@@ -737,7 +737,7 @@ footer p{
     margin-left: 20px;
 }
 .curso__programa div{
-    background-color: rgb(221, 0, 18);
+    background: linear-gradient(228deg, rgb(167 57 78) 18%, rgb(136 63 115) 57%, rgb(228 187 108) 100%);
     color: white;
     width: 40%;
     height: 329px;
@@ -762,6 +762,7 @@ footer p{
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 10px;
+    cursor: pointer;
 }
 .curso__programa button:hover {
     background-color: black;
@@ -958,14 +959,16 @@ footer p{
     justify-content: center;
     align-items: center;
 }
-/* -------------------- ELLAS ------------------------ */
 .container__nosotras{
     grid-area: nosotras;
 }
 .container__nosotras p{
+    text-align: center;
     padding: 40px;
     margin: 10px 30px;
+    
 }
+/* -------------------- ELLAS ------------------------ */
 .nuestraMision{
     grid-area: imagen;
     background-image: url(../multimedia/mision5.jpeg);
@@ -999,7 +1002,7 @@ footer p{
     grid-area: ellas;
 }
 .container__ellas p{
-    background-color: green;
+    text-align: center;
     padding: 40px;
     margin: 10px 30px;
 }
@@ -1039,6 +1042,7 @@ footer p{
     position: relative;
     top: 10px;
     right: 254px;
+    transform: rotate(352deg);
 }
 .hero__contacto h3{
     background-color: black;
