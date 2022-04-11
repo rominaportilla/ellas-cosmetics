@@ -863,8 +863,30 @@ footer p{
 }
 .moda__info{
     grid-area: texto;
-    padding: 240px 100px 0px 30px;
-    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes aparecer {
+    0% {background-color: black;}
+    25% {background-color: rgb(203 140 48);}
+    50% {background-color: rgb(189 44 9);}
+    75% {background-color: rgb(156 7 24);}
+    100% {background-color: rgb(89 51 87);}
+}
+.moda__info p{
+    color: white;
+    background-color: black;
+    font-size: 18px;
+    padding: 70px 59px;
+    width: 420px;
+    height: 480px;
+    position: relative;
+    top: 58px;
+    right: 55px;
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
 }
 .moda__calendario{
     grid-area: calendario;
@@ -910,6 +932,10 @@ footer p{
     border: 2px solid black;
     padding: 4px;
     cursor: pointer;
+    transition: all 2s;
+}
+.moda__form form .reservarFecha:hover{
+    background-color: rgb(203 140 48);
 }
 
 
@@ -962,11 +988,20 @@ footer p{
 .container__nosotras{
     grid-area: nosotras;
 }
+@keyframes aparecer {
+    0% {opacity: 0;}
+    25% {opacity: 0.2;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.7;}
+    100% {opacity: 1;}
+}
 .container__nosotras p{
     text-align: center;
     padding: 40px;
     margin: 10px 30px;
-    
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
 }
 /* -------------------- ELLAS ------------------------ */
 .nuestraMision{
@@ -1001,10 +1036,20 @@ footer p{
 .container__ellas{
     grid-area: ellas;
 }
+@keyframes aparecerDos {
+    0% {opacity: 0;}
+    25% {opacity: 0.2;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.7;}
+    100% {opacity: 1;}
+}
 .container__ellas p{
     text-align: center;
     padding: 40px;
     margin: 10px 30px;
+    animation-duration: 5s;
+    animation-name: aparecerDos;
+    animation-iteration-count:initial;
 }
 
 
