@@ -9,7 +9,7 @@
 
 
 /* -------INDEX-------INDEX-------INDEX-------INDEX--------------INDEX-------INDEX------- */
-body{
+/* body{
     font-family: 'Roboto', sans-serif;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -20,7 +20,7 @@ body{
     "nuevos nuevos nuevos"
     "carta carta carta"
     "footer footer footer";
-}
+} */
 /* -------------------- HEADER ------------------------ */
 header{
     background-color: white;
@@ -139,8 +139,8 @@ header .header__logo span{
 }
 /* -------------------- HERO ------------------------ */
 .hero{
-    grid-area: hero;
     background-image: url(../multimedia/hero4.jpg);
+    height: 600px;
     background-size: cover;
     background-position: left center;
     display: flex;
@@ -168,6 +168,7 @@ header .header__logo span{
 .hero p{
     font-size: 25px;
     padding: 10px;
+    width: 200px;
 }
 .hero button{
     font-size: 18px;
@@ -178,6 +179,7 @@ header .header__logo span{
     background-color: rgb(221, 0, 18);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     cursor: pointer;
+    width: 200px;
 }
 button:hover{
     background-color: rgb(168, 0, 14);
@@ -259,17 +261,18 @@ button:hover{
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: flex-start;
-    margin: 0 50px;
+    margin: 0 50px 36px 50px;
 }
 .container__cartas div{
     width: 350px;
-    height: 210px;
+    height: 230px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 1px solid rgb(170, 170, 170);
     border-radius: 20px;
     padding: 20px;
+    margin-bottom: 20px
 }
 .container__cartas div img{
     width: 80px;
@@ -468,18 +471,17 @@ footer p{
 
 /*-------COSMETICOS-------COSMETICOS-------COSMETICOS-------COSMETICOS--------------COSMETICOS-------COSMETICOS */
 .body__cosmeticos{
-    display: grid;
+    /* display: grid;
     grid-template-rows: 130px 680px 150px 1000px 100px;
     grid-template-areas:
     "header header header"
     "hero hero hero"
     "categorias categorias categorias"
     "productos productos productos"
-    "footer footer footer";
+    "footer footer footer"; */
 }
 /* -------------------- HERO ------------------------ */
 .hero__cosmeticos{
-    grid-area: hero;
     background-image: url(../multimedia/hero-cosmeticos.jpg);
     background-size: cover;
     background-position: center center;
@@ -496,6 +498,8 @@ footer p{
     margin-left: 20px;
     position: relative;
     bottom: 25px;
+    height: 65px;
+    width: 258px;
 }
 /* -------------------- CATEGORIAS ------------------------ */
 .listaCategorias{
@@ -1007,21 +1011,30 @@ footer p{
 
 
 
-/*-------CONTACTO-------CONTACTO-------CONTACTO-------CONTACTO--------------CONTACTO-------CONTACTO------- */
-.body__contacto{
-    font-family: 'Roboto', sans-serif;
-    display: grid;
-    grid-template-rows: 130px 270px 480px 450px 100px;
-    grid-template-areas:
-    "header header header"
-    "hero hero hero"
-    "contacto contacto aside"
-    "iframe iframe iframe"
-    "footer footer footer";
+
+
+
+
+
+
+
+
+
+
+.navColor a{
+    color: black;
 }
-/* -------------------- HERO ------------------------ */
+.nav__search button{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+.nav__search button:hover{
+    background-color: rgb(221, 0, 18);
+    border: 2px solid rgb(221, 0, 18);
+}
+
 .hero__contacto{
-    grid-area: hero;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -1035,9 +1048,6 @@ footer p{
     border: 3px solid black;
     display: inline-block;
     width: 153px;
-    position: relative;
-    top: 10px;
-    right: 254px;
 }
 .hero__contacto h3{
     background-color: black;
@@ -1046,18 +1056,21 @@ footer p{
     padding: 20px;
     width: 544px;
 }
-/* -------------------- CONTACTO ------------------------ */
+.heroRetoques{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 50px;
+}
+
+
+
 .container__contacto{
-    grid-area: contacto;
-    width: 80%;
-    height: 390px;
+    width: 578px;
+    height: 500px;
     background-color: white;
     padding: 20px;
-    margin: 10px;
     border: 4px solid black;
     border-radius: 15px;
-    position: relative;
-    left: 87px;
+    margin: 0px 50px 50px 100px;
 }
 .container__contacto h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -1079,17 +1092,17 @@ footer p{
     border: 2px solid black;
     padding: 4px;
 }
-/* -------------------- ASIDE ------------------------ */
+
+
 .aside__encontranos{
-    grid-area: aside;
     width: 333px;
     height: 390px;
     color: white;
     background-color: black;
-    margin: 10px 10px 0px 0px;
     padding: 50px;
     line-height: 1.8;
     border-radius: 15px;
+    margin: 0px 50px 50px 100px;
 }
 .aside__encontranos h4{
     padding: 20px 30px;
@@ -1097,14 +1110,19 @@ footer p{
 .aside__encontranos p{
     margin: 0px 30px;
 }
+
+
+
 /* -------------------- IFRAME ------------------------ */
 .mapa__contacto{
-    grid-area: iframe;
     position: relative;
     left: 240px;
     width: 800px;
     height: 400px;
+    margin-bottom: 50px;
 }
+
+
 
 
 
@@ -1123,7 +1141,8 @@ footer p{
         position: relative;
         left: 30px;
         width: 90%;
-        height: 449px;
+        height: 520px;
+        margin: 0px;
     }
     .container__contacto div input{
         display: block;
@@ -1131,9 +1150,9 @@ footer p{
         width: 100%;
     }
     .aside__encontranos {
-        width: 300px;
-        height: 449px;
-        margin: 10px 30px 0px 20px;
+        width: 692px;
+        height: 261px;
+        margin: 10px 30px 30px 20px;
         padding: 38px;
     }
     .mapa__contacto{
@@ -1174,11 +1193,8 @@ footer p{
         width: 455px;
     }
     .container__contacto{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         width: 420px;
-        height: 430px;
+        height: 499px;
     }
     .container__contacto h1 {
         font-size: 40px;
@@ -1193,15 +1209,16 @@ footer p{
         align-items: center;
         width: 420px;
         height: 237px;
-        margin: 10px;
+        margin: 33px 10px;
         padding: 23px;
         position: relative;
-        left: 30px;
+        left: 20px;
     }
     .mapa__contacto{
         position: relative;
         left: 55px;
         width: 400px;
         height: 180px;
+        margin-bottom: 30px;
     }
 }
