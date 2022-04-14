@@ -24,7 +24,6 @@
 /* -------------------- HEADER ------------------------ */
 header{
     background-color: white;
-    grid-area: header;
     border-bottom: 2px solid black;
     display: flex;
     flex-direction: row;
@@ -186,7 +185,6 @@ button:hover{
 }
 /* -------------------- NUEVOS PRODUCTOS ------------------------ */
 .container__nuevosproductos{
-    grid-area: nuevos;
     background-color: white;
     margin: 150px 100px 80px 100px;
     display: flex;
@@ -256,7 +254,6 @@ button:hover{
 }
 /* -------------------- CARTAS ------------------------ */
 .container__cartas{
-    grid-area: carta;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
@@ -298,7 +295,6 @@ button:hover{
 }
 /* -------------------- FOOTER ------------------------ */
 footer{
-    grid-area: footer;
     background-color: black;
     padding: 30px;
 }
@@ -314,14 +310,14 @@ footer p{
 
 @media screen and (max-width: 768px) {
     body{
-        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 252px 700px 1750px 665px 100px;
         grid-template-areas: 
         "header header"
         "hero hero "
         "nuevos nuevos"
         "carta carta"
-        "footer footer";
+        "footer footer"; */
     }
     header{
         flex-direction: column;
@@ -397,14 +393,14 @@ footer p{
 
 @media screen and (max-width: 500px) {
     body{
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr;
         grid-template-rows: 252px 600px 556px 665px 80px;
         grid-template-areas: 
         "header"
         "hero"
         "nuevos"
         "carta"
-        "footer";
+        "footer"; */
     }
     header{
         width: 500px;
@@ -486,6 +482,7 @@ footer p{
     background-size: cover;
     background-position: center center;
     margin-top: 40px;
+    height: 600px;
 }
 .hero__cosmeticos h1{
     color: black;
@@ -502,15 +499,13 @@ footer p{
     width: 258px;
 }
 /* -------------------- CATEGORIAS ------------------------ */
-.listaCategorias{
-    grid-area: categorias;
-}
 .listaCategorias ul{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
     position: relative;
     top: 60px;
+    height: 85px;
 }
 .listaCategorias li{
     display: inline-block;
@@ -528,7 +523,6 @@ footer p{
 }
 /* -------------------- PRODUCTOS ------------------------ */
 .cosmeticos{
-    grid-area: productos;
     margin: 0px 60px 60px 60px;
     background-color: white;
 }
@@ -590,14 +584,14 @@ footer p{
 
 @media screen and (max-width: 768px) {
     .body__cosmeticos{
-        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 252px 600px 180px 1694px 100px;
         grid-template-areas:
         "header header"
         "hero hero"
         "categorias categorias"
         "productos productos"
-        "footer footer";
+        "footer footer"; */
     }
 
     header{
@@ -669,14 +663,14 @@ footer p{
 
 @media screen and (max-width: 500px) {
     .body__cosmeticos{
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr;
         grid-template-rows: 252px 550px 225px 955px 80px;
         grid-template-areas:
         "header"
         "hero"
         "categorias"
         "productos"
-        "footer";
+        "footer"; */
     }
     .hero__cosmeticos{
         grid-area: hero;
@@ -697,7 +691,7 @@ footer p{
 
 
 /* /*-------ESCUELA-------ESCUELA-------ESCUELA-------ESCUELA--------------ESCUELA-------ESCUELA------- */
-.body__escuela{
+/* .body__escuela{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 130px 550px 150px 502px 100px;
@@ -707,11 +701,8 @@ footer p{
     "categorias categorias"
     "programa programa"
     "footer footer";
-}
+} */
 /* -------------------- HERO ------------------------ */
-.hero__escuela{
-    grid-area: hero;
-}
 .hero__escuela h1{
     color: black;
     background-color: white;
@@ -725,20 +716,20 @@ footer p{
     position: relative;
     bottom: 25px;
     z-index: 2;
+    width: 197px;
 }
 .hero__escuela iframe{
     position: relative;
     bottom: 45px;
 }
 /* -------------------- PROGRAMA ------------------------ */
-.curso__programa{
-    grid-area: programa;
-}
 .curso__programa h2{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 40px;
     padding: 10px;
     margin-left: 20px;
+    margin-top: 70px;
+    margin-bottom: 20px;
 }
 .curso__programa div{
     background-color: rgb(221, 0, 18);
@@ -749,6 +740,7 @@ footer p{
     padding: 37px;
     overflow: auto;
     display: inline-block;
+    margin-bottom: 60px;
 }
 .curso__programa div h6{
     font-family: 'Roboto', sans-serif;
@@ -776,15 +768,62 @@ footer p{
     height: 340px;
     display: inline-block;
     position: relative;
-    left: 100px;
+    left: 60px;
 } 
 
+@media screen and (max-width: 768px) {
+    .listaCategorias{
+        height: 150px;
+    }
+    .curso__programa div{
+        width: 586px;
+    }
+    .curso__programa div h6{
+        font-size: 20px;
+    }
+    .curso__programa .curso__img{
+        margin-left: 67px;
+        margin-bottom: 50px;
+    } 
+}
+
+@media screen and (max-width: 500px) {
+    .hero__escuela h1{
+        font-size: 29px;
+    }
+    .hero__escuela iframe{
+        width: 100%;
+        height: 400px;
+    }
+    .listaCategorias{
+        height: 200px;
+    }
+    .listaCategorias li a {
+        font-size: 17px;
+    }
+    .curso__programa h2{
+        font-size: 30px;
+    }
+    .curso__programa div{
+        width: 350px;
+    }
+    .curso__programa div h6{
+        font-size: 20px;
+    }
+    .curso__programa .curso__img{
+        width: 200px;
+        height: 290px;
+        margin-left: 0px;
+        margin-bottom: 50px;
+        
+    } 
+}
 
 
 
 
 /*-------SERVICIOS-------SERVICIOS-------SERVICIOS-------SERVICIOS--------------SERVICIOS-------SERVICIOS */
-.body__servicios{
+/* .body__servicios{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 130px 680px 150px 640px 496px 550px 100px;
@@ -796,14 +835,14 @@ footer p{
     "calendario imagenDos"
     "imagenTres form"
     "footer footer";
-}
+} */
 /* -------------------- HERO ------------------------ */
 .hero__servicios{
-    grid-area: hero;
     background-image: url(../multimedia/servicios3.jpeg);
     background-size: cover;
     background-position: center center;
     margin-top: 40px;
+    height: 600px;
 }
 .hero__servicios h1{
     color: black;
@@ -816,11 +855,10 @@ footer p{
     margin-left: 20px;
     position: relative;
     bottom: 25px;
+    width: 216px;
+    height: 70px;
 }
 /* -------------------- CATEGORIAS ------------------------ */
-.listaCategorias{
-    grid-area: categorias;
-}
 .listaCategorias ul{
     display: flex;
     flex-flow: row wrap;
@@ -842,7 +880,6 @@ footer p{
 }
 /* -------------------- info ------------------------ */
 .moda__img{
-    grid-area: imagenUno;
     margin: 20px;
 }
 .moda__img h2{
@@ -861,23 +898,19 @@ footer p{
     width: 344px;
     height: 480px;
     margin: 20px;
-    position: relative;
+    /* position: relative;
     left: 107px;
+    display: inline-block; */
 }
 .moda__info{
-    grid-area: texto;
-    padding: 240px 100px 0px 30px;
+    margin-top: 180px;
     font-size: 20px;
-}
-.moda__calendario{
-    grid-area: calendario;
+    width: 400px;
+    height: 300px;
 }
 .moda__calendario iframe{
     margin-left: 100px;
     padding: 20px;
-}
-.moda__imgDos{
-    grid-area: imagenDos;
 }
 .moda__imgDos img{
     width: 381px;
@@ -885,26 +918,21 @@ footer p{
     position: relative;
     left: 71px;
 }
-.moda__imgTres{
-    grid-area: imagenTres;
-}
 .moda__imgTres img{
     width: 344px;
     height: 480px;
     margin-left: 20px;
     position: relative;
     left: 107px;
+    margin-bottom: 60px;
 }
 .moda__form{
-    grid-area: form;
-}
-.moda__form form{
     width: 450px;
     position: relative;
     left: 71px;
     top: 120px;
 }
-.moda__form form .reservarFecha{
+.moda__form .reservarFecha{
     width: 50%;
     color: white;
     background-color: rgb(221, 0, 18);
@@ -914,7 +942,6 @@ footer p{
     padding: 4px;
     cursor: pointer;
 }
-
 
 
 

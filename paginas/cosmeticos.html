@@ -11,51 +11,59 @@
     <link rel="stylesheet" href="../css/iconos.css">
 </head>
 <body class="body__cosmeticos">
-    <header class="header">
-        <div class="header__logo">
-            <a href="../index.html"><span class="logo__titulo">ELLA'S</span>
-                <span class="logo__subtitulo">ANTONELLA'S COSMETICS</span></a>
-        </div>
-        <nav class="header__nav">
-            <div class="nav__hamburguesa">
-            <ul class="menu">
-                <li><a href="cosmeticos.html">COSMETICOS</a></li>
-                <ul class="submenu">
-                    <li><a href="#">Rostro</a></li>
-                    <li><a href="#">Labios</a></li>
-                    <li><a href="#">Ojos</a></li>
-                    <li><a href="#">Brochas & Accesorios</a></li>
-                    <li><a href="#">Piel</a></li>
-                </ul>
-                <li><a href="../paginas/escuela.html">ESCUELA</a></li>
-                <ul class="submenu">
-                    <li><a href="#">Curso de Maquillaje</a></li>
-                    <li><a href="#">Taller Especial Novias</a></li>
-                    <li><a href="#">Taller Marketing para Maquilladores</a></li>
-                </ul>
-                <li><a href="../paginas/servicios.html">SERVICIOS</a></li>
-                <ul class="submenu">
-                    <li><a href="#">Maquillaje & Peinado Novias</a></li>
-                    <li><a href="#">Maquillaje & Peinado Eventos</a></li>
-                    <li><a href="#">Maquillaje & Peinado Moda & Producciones</a></li>
-                </ul>
-                <li><a href="../paginas/productos.html">NOSOTRAS</a></li>
-                <li><a href="../paginas/contacto.html">CONTACTO</a></li>
-            </ul>
-            </div>
-            <div class="nav__iconos">
-                <input type="text" placeholder="SEARCH">
-                <button type="submit"><span class="icon-search"></span></button>
-                <a href="#"><span class="icon-cart"></span></a>
+    <header class="row">
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="container-fluid">
+                <a class="navbar-brand header__logo" href="../index.html"><span class="logo__titulo">ELLA'S</span>
+                    <span class="logo__subtitulo">ANTONELLA'S COSMETICS</span></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse header__nav" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
+                        <li class="nav-item">
+                            <a class="nav-link disabled">COSMETICOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../paginas/escuela.html">ESCUELA</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/servicios.html">SERVICIOS</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/nosotras.html">NOSOTRAS</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/contacto.html">CONTACTO</a>
+                        </li>
+
+                    </ul>
+
+                    <form class="d-flex nav__search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
         </nav>
+        
     </header>
 
-    <section class="hero__cosmeticos">
-            <h1>COSMÉTICOS</h1> 
+    <section class="row hero__cosmeticos">
+            <h1 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">COSMÉTICOS</h1> 
     </section>
-    <section class="listaCategorias">
-        <ul>
+
+    <section class="row listaCategorias">
+        <ul class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
             <li><a href="#labios">LABIOS</a></li>
             <li><a href="#rostro">ROSTRO</a></li>
             <li><a href="#ojos">OJOS</a></li>
@@ -63,9 +71,10 @@
             <li><a href="#piel">PIEL</a></li>
         </ul>
     </section>
-    <section class="cosmeticos">
-        <h2 id="labios">LABIOS</h2>
-        <form class="ordenar">
+
+    <section class="row cosmeticos">
+        <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="labios">LABIOS</h2>
+        <form class="ordenar col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <label for="secciones">Ordenar por:</label>
             <select name="secciones">
                 <option value="vendidos">Más Vendidos</option>
@@ -78,49 +87,49 @@
             </select>
         </form>
         <article class="container__productos">
-        <div class="producto">
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 producto">
             <img src="../multimedia/producto5.png" alt="imagen-labial">
             <h4>IT'S THE GLOSS FOR ME LIP SHINE LACQUER</h4>
             <p>$1240 <span>$1600</span></p>
             <button>AÑADIR AL CARRITO</button>
         </div>
-        <div class="producto">
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 producto">
             <img src="../multimedia/producto1.png" alt="imagen-labial">
             <h4>EVERYTHING AND MORE LIP SHINE LACQUER</h4>
             <p>$1240 <span>$1600</span></p>
             <button>AÑADIR AL CARRITO</button>
         </div>
-        <div class="producto carrusel-mobile">
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 producto carrusel-mobile">
             <img src="../multimedia/producto2.png" alt="imagen-labial">
             <h4>FELT CUTE LIP SHINE LACQUER</h4>
             <p>$1240<span>$1600</span></p>
             <button>AÑADIR AL CARRITO</button>
         </div>
-        <div class="producto carrusel-mobile">
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 producto carrusel-mobile">
             <img src="../multimedia/producto3.png" alt="imagen-labial">
             <h4>DON'T @ ME LIP SHINE LACQUER</h4>
             <p>$1240 <span>$1600</span></p>
             <button>AÑADIR AL CARRITO</button>
         </div>
-        <div class="producto carrusel-mobile">
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 producto carrusel-mobile">
             <img src="../multimedia/producto4.png" alt="imagen-labial">
             <h4>YOU'RE CUTE JEANS LIP SHINE LACQUER</h4>
             <p>$1240 <span>$1600</span></p>
             <button>AÑADIR AL CARRITO</button>
         </div>
-        <div class="producto carrusel-mobile">
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 producto carrusel-mobile">
             <img src="../multimedia/producto6.png" alt="imagen-labial">
             <h4>LOVE BITE MATTE LIQUID LIPSTICK</h4>
             <p>$1240 <span>$1600</span></p>
             <button>AÑADIR AL CARRITO</button>
         </div>
-        <div class="producto carrusel-mobile">
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 producto carrusel-mobile">
             <img src="../multimedia/producto7.png" alt="imagen-labial">
             <h4>CALL ME MATTE LIQUID LIPSTICK</h4>
             <p>$1240 <span>$1600</span></p>
             <button>AÑADIR AL CARRITO</button>
         </div>
-        <div class="producto carrusel-mobile">
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 producto carrusel-mobile">
             <img src="../multimedia/producto8.png" alt="imagen-labial">
             <h4>KRISTEN MATTE LIQUID LIPSTICK</h4>
             <p>$1240 <span>$1600</span></p>
@@ -131,9 +140,9 @@
     <div>
         <img src="../multimedia/whatsapp1.png" alt="icono-whatsapp" class="whatsapp__icono">
     </div>
-    <footer>
-        <p>Política de Privacidad | Términos de Uso</p>
-        <p>Copyright &copy; Antonella's Cosmetics 2022</p>
+    <footer class="row">
+        <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Política de Privacidad | Términos de Uso</p>
+        <p class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Copyright &copy; Antonella's Cosmetics 2022</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
