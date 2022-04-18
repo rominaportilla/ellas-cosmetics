@@ -7,93 +7,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ella's | Contacto </title>
     <link rel="shortcut icon" href="../multimedia/favicon3.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/iconos.css">
+    <script src="https://kit.fontawesome.com/ff338c4dd2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body class="body__contacto">
-    <header class="header">
-        <div class="header__logo">
-            <a href="../index.html"><span class="logo__titulo">ELLA'S</span>
-                <span class="logo__subtitulo">ANTONELLA'S COSMETICS</span></a>
-        </div>
-        <nav class="header__nav">
-            <div class="nav__hamburguesa">
-            <ul class="menu">
-                <li><a href="../paginas/cosmeticos.html">COSMETICOS</a></li>
-                <ul class="submenu">
-                    <li><a href="#">Rostro</a></li>
-                    <li><a href="#">Labios</a></li>
-                    <li><a href="#">Ojos</a></li>
-                    <li><a href="#">Brochas & Accesorios</a></li>
-                    <li><a href="#">Piel</a></li>
-                </ul>
-                <li><a href="../paginas/escuela.html">ESCUELA</a></li>
-                <ul class="submenu">
-                    <li><a href="#">Curso de Maquillaje</a></li>
-                    <li><a href="#">Taller Especial Novias</a></li>
-                    <li><a href="#">Taller Marketing para Maquilladores</a></li>
-                </ul>
-                <li><a href="../paginas/servicios.html">SERVICIOS</a></li>
-                <ul class="submenu">
-                    <li><a href="#">Maquillaje & Peinado Novias</a></li>
-                    <li><a href="#">Maquillaje & Peinado Eventos</a></li>
-                    <li><a href="#">Maquillaje & Peinado Moda & Producciones</a></li>
-                </ul>
-                <li><a href="../paginas/nosotras.html">NOSOTRAS</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-            </ul>
-            </div>
-            <div class="nav__iconos">
-                <input type="text" placeholder="SEARCH">
-                <button type="submit"><span class="icon-search"></span></button>
+<body class="container-fluid body__contacto">
+    <header class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="container-fluid header__navbar">
+
+                <a class="navbar-brand header__logo" href="../index.html">
+                    <span class="logo__titulo">ELLA'S</span>
+                    <span class="logo__subtitulo">ANTONELLA'S COSMETICS</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse header__nav" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../paginas/cosmeticos.html">COSMETICOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/escuela.html">ESCUELA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/nosotras.html">NOSOTRAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active__nav" href="contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+
                 <a href="#"><span class="icon-cart"></span></a>
             </div>
         </nav>
     </header>
-    <section class="hero__contacto">
-        <h2> ¡Hola!💌</h2>
-        <h3>Somos Ella's y estamos acá para vos.</h3>
+    
+    <section class="row hero__contacto">
+        <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> ¡Hola!💌</h2>
+        <h3 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Somos Ella's y estamos acá para vos.</h3>
     </section>
-    <section class="container__contacto">
-        <h1>Contacto</h1>
-        <form>
-            <div> 
-                <label for="nombre">Nombre:</label>
-                <input type="text" placeholder="Nombre" name="nombre">
-                <label for="apellido">Apellido:</label>
-                <input type="text" placeholder="Apeliido" name="apellido">
-            </div>
+
+    <section class="row container__contacto">
+        <article class="col-lg-8 col-md-8 col-sm-12 col-xs-12 contacto">
+            <h1>Contacto</h1>
+            <form>
+                <div> 
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" placeholder="Nombre" name="nombre">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" placeholder="Apeliido" name="apellido">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="ej. nombre@gmail.com" name="email">
+                    <label for="whatsapp">WhatsApp:</label>
+                    <input type="text" name="whatsapp" placeholder="xxxx-xxxx">
+                </div>
+                <label for="mensaje">Mensaje:</label>
+                <div>
+                    <textarea name="mensaje" cols="30" rows="10" placeholder="Deja tu mensaje aquí" class="mensaje"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar Mensaje" class="enviarMensaje">
+                </div>
+            </form>
+        </article>
+        <aside class="col-lg-4 col-md-4 col-sm-12 col-xs-12 aside__encontranos">
+            <h4>Encontranos en</h4>
             <div>
-                <label for="email">Email:</label>
-                <input type="email" placeholder="ej. nombre@gmail.com" name="email">
-                <label for="whatsapp">WhatsApp:</label>
-                <input type="text" name="whatsapp" placeholder="xxxx-xxxx">
+                <i class="fa-brands fa-instagram icono__footer redes"></i>
+                <i class="fa-brands fa-twitter icono__footer redes"></i>
+                <i class="fa-brands fa-facebook-square icono__footer redes"></i>
             </div>
-            <label for="mensaje">Mensaje:</label>
-            <div>
-                <textarea name="mensaje" cols="30" rows="10" placeholder="Deja tu mensaje aquí" class="mensaje"></textarea>
-            </div>
-            <div>
-                <input type="submit" value="Enviar Mensaje" class="enviarMensaje">
-            </div>
-        </form>
-    </section>
-    <aside class="aside__encontranos">
-        <h4>Encontranos en</h4>
-        <p>
-            Dirección: Av. 9 de Julio s/n, C1043 CABA <br>
-            Teléfono: 1234-5678 <br>
-            Email: info@ellas.com <br>
-        </p>
-    </aside>
-    <iframe class="mapa__contacto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016887889548!2d-58.38375908544157!3d-34.60373446500467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1647686773483!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <p>
+                Dirección: Av. 9 de Julio s/n, C1043 CABA <br>
+                Teléfono: 1234-5678 <br>
+                Email: info@ellas.com <br>
+            </p>
+        </aside>
+        </section>
+        
+    <div class="row mapa__contacto">
+        <iframe class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016887889548!2d-58.38375908544157!3d-34.60373446500467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1647686773483!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    
     <div>
         <img src="../multimedia/whatsapp1.png" alt="icono-whatsapp" class="whatsapp__icono">
     </div>
-    <footer>
-        <p>Política de Privacidad | Términos de Uso</p>
-        <p>Copyright &copy; Antonella's Cosmetics 2022</p>
+
+    <footer class="row">
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+            <i class="fa-brands fa-instagram icono__footer"></i>
+            <i class="fa-brands fa-twitter icono__footer"></i>
+            <i class="fa-brands fa-facebook-square icono__footer"></i>
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+            <p>Política de Privacidad | Términos de Uso </p>
+            <p>Copyright &copy; Antonella's Cosmetics 2022</p>
+        </div>
     </footer>
+
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

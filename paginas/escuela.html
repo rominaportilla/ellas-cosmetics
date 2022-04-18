@@ -6,63 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ella's | Escuela</title>
     <link rel="shortcut icon" href="../multimedia/favicon3.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/iconos.css">
+    <script src="https://kit.fontawesome.com/ff338c4dd2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="body__escuela">
-    <header class="header">
-        <div class="header__logo">
-            <a href="../index.html"><span class="logo__titulo">ELLA'S</span>
-            <span class="logo__subtitulo">ANTONELLA'S COSMETICS</span></a>
-        </div>
-        <nav class="header__nav">
-            <div class="nav__hamburguesa">
-            <ul class="menu">
-                <li><a href="../paginas/cosmeticos.html">COSMETICOS</a></li>
-                <ul class="submenu">
-                    <li><a href="#">Rostro</a></li>
-                    <li><a href="#">Labios</a></li>
-                    <li><a href="#">Ojos</a></li>
-                    <li><a href="#">Brochas & Accesorios</a></li>
-                    <li><a href="#">Piel</a></li>
-                </ul>
-                <li><a href="escuela.html">ESCUELA</a></li>
-                <ul class="submenu">
-                    <li><a href="#">Curso de Maquillaje</a></li>
-                    <li><a href="#">Taller Especial Novias</a></li>
-                    <li><a href="#">Taller Marketing para Maquilladores</a></li>
-                </ul>
-                <li><a href="../paginas/servicios.html">SERVICIOS</a></li>
-                <ul class="submenu">
-                    <li><a href="#">Maquillaje & Peinado Novias</a></li>
-                    <li><a href="#">Maquillaje & Peinado Eventos</a></li>
-                    <li><a href="#">Maquillaje & Peinado Moda & Producciones</a></li>
-                </ul>
-                <li><a href="../paginas/nosotras.html">NOSOTRAS</a></li>
-                <li><a href="../paginas/contacto.html">CONTACTO</a></li>
-            </ul>
-            </div>
-            <div class="nav__iconos">
-                <input type="text" placeholder="SEARCH">
-                <button type="submit"><span class="icon-search"></span></button>
+<body class="container-fluid body__escuela">
+    <header class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="container-fluid header__navbar">
+
+                <a class="navbar-brand header__logo" href="../index.html">
+                    <span class="logo__titulo">ELLA'S</span>
+                    <span class="logo__subtitulo">ANTONELLA'S COSMETICS</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse header__nav" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../paginas/cosmeticos.html">COSMETICOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active__nav" href="escuela.html">ESCUELA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/nosotras.html">NOSOTRAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+
                 <a href="#"><span class="icon-cart"></span></a>
             </div>
         </nav>
     </header>
-    <section class="hero__escuela"> 
-        <h1>ESCUELA</h1> 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.066850016401!2d-58.3815704!3d-34.6037389!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1647864616433!5m2!1ses-419!2sar" width="1263" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    
+    <section class="row hero__escuela__container"> 
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero__escuela">
+            <h1>ESCUELA</h1> 
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.066850016401!2d-58.3815704!3d-34.6037389!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1647864616433!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
     </section>
-    <section class="listaCategorias">
-        <ul>
+
+    <section class="row listaCategorias">
+        <ul class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <li><a class="seccionElegida" href="#">CURSO DE MAQUILLAJE</a></li>
         <li><a href="#">TALLER ESPECIAL NOVIAS</a></li>
         <li><a href="#">TALLER MARKETING PARA MAQUILLADORES</a></li>
         </ul>
     </section>
-    <section class="curso__programa">
-        <h2>CURSO DE MAQUILLAJE</h2>
-        <div>
+
+    <section class="row curso__programa">
+        <h2 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">CURSO DE MAQUILLAJE</h2>
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 programa">
             <h6>Información sobre el Curso de Maquillaje Profesional</h6>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non possimus at sit dolores quae, nesciunt neque libero commodi impedit vero facilis quia doloribus, adipisci dignissimos est quod, earum rerum dolore.
                 Aliquam, ducimus suscipit! Nostrum laboriosam quidem facere perferendis esse vitae, omnis ducimus tempore eos fugiat est at alias itaque ex cum officiis quia, officia, blanditiis harum cupiditate enim consequuntur porro!
@@ -73,15 +84,25 @@
                 Voluptatum nam animi cumque suscipit voluptatem nemo vel quidem fuga harum iusto debitis incidunt repellendus eum vitae, earum velit aperiam molestias doloremque cum non! Quaerat nobis repellendus error ipsam earum?</p>
             <button>DESCARGAR PROGRAMA</button>
         </div>
-        <img src="../multimedia/cursoMaquillaje3.jpg" alt="imagen-curso" class="curso__img">
-        <img src="../multimedia/cursoMaquillaje4.jpg" alt="imagen-curso" class="curso__img">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 curso__img">
+        </div>
     </section>
+
     <div>
         <img src="../multimedia/whatsapp1.png" alt="icono-whatsapp" class="whatsapp__icono">
     </div>
-    <footer>
-        <p>Política de Privacidad | Términos de Uso</p>
-        <p>Copyright &copy; Antonella's Cosmetics 2022</p>
+
+    <footer class="row">
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+            <i class="fa-brands fa-instagram icono__footer"></i>
+            <i class="fa-brands fa-twitter icono__footer"></i>
+            <i class="fa-brands fa-facebook-square icono__footer"></i>
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+            <p>Política de Privacidad | Términos de Uso </p>
+            <p>Copyright &copy; Antonella's Cosmetics 2022</p>
+        </div>
     </footer>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

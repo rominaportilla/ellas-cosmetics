@@ -6,55 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ella's | Cosméticos</title>
     <link rel="shortcut icon" href="../multimedia/favicon3.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/iconos.css">
+    <script src="https://kit.fontawesome.com/ff338c4dd2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="body__cosmeticos">
-    <header class="header">
-        <div class="header__logo">
-            <a href="../index.html"><span class="logo__titulo">ELLA'S</span>
-                <span class="logo__subtitulo">ANTONELLA'S COSMETICS</span></a>
-        </div>
-        <nav class="header__nav">
-            <div class="nav__hamburguesa">
-            <ul class="menu">
-                <li><a href="cosmeticos.html">COSMETICOS</a></li>
-                <ul class="submenu">
-                    <li><a href="#">Rostro</a></li>
-                    <li><a href="#">Labios</a></li>
-                    <li><a href="#">Ojos</a></li>
-                    <li><a href="#">Brochas & Accesorios</a></li>
-                    <li><a href="#">Piel</a></li>
-                </ul>
-                <li><a href="../paginas/escuela.html">ESCUELA</a></li>
-                <ul class="submenu">
-                    <li><a href="#">Curso de Maquillaje</a></li>
-                    <li><a href="#">Taller Especial Novias</a></li>
-                    <li><a href="#">Taller Marketing para Maquilladores</a></li>
-                </ul>
-                <li><a href="../paginas/servicios.html">SERVICIOS</a></li>
-                <ul class="submenu">
-                    <li><a href="#">Maquillaje & Peinado Novias</a></li>
-                    <li><a href="#">Maquillaje & Peinado Eventos</a></li>
-                    <li><a href="#">Maquillaje & Peinado Moda & Producciones</a></li>
-                </ul>
-                <li><a href="../paginas/productos.html">NOSOTRAS</a></li>
-                <li><a href="../paginas/contacto.html">CONTACTO</a></li>
-            </ul>
-            </div>
-            <div class="nav__iconos">
-                <input type="text" placeholder="SEARCH">
-                <button type="submit"><span class="icon-search"></span></button>
+<body class="container-fluid body__cosmeticos">
+    <header class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="container-fluid header__navbar">
+
+                <a class="navbar-brand header__logo" href="../index.html">
+                    <span class="logo__titulo">ELLA'S</span>
+                    <span class="logo__subtitulo">ANTONELLA'S COSMETICS</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse header__nav" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
+                        <li class="nav-item">
+                            <a class="nav-link active__nav" aria-current="page" href="cosmeticos.html">COSMETICOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/escuela.html">ESCUELA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/nosotras.html">NOSOTRAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+
                 <a href="#"><span class="icon-cart"></span></a>
             </div>
         </nav>
     </header>
 
-    <section class="hero__cosmeticos">
+    <section class="row hero__cosmeticos__container">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero__cosmeticos">
             <h1>COSMÉTICOS</h1> 
+        </div>
     </section>
-    <section class="listaCategorias">
-        <ul>
+
+    <section class="row listaCategorias">
+        <ul class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <li><a href="#labios">LABIOS</a></li>
             <li><a href="#rostro">ROSTRO</a></li>
             <li><a href="#ojos">OJOS</a></li>
@@ -62,77 +71,116 @@
             <li><a href="#piel">PIEL</a></li>
         </ul>
     </section>
-    <section class="cosmeticos">
-        <h2 id="labios">LABIOS</h2>
-        <form class="ordenar">
-            <label for="secciones">Ordenar por:</label>
-            <select name="secciones">
-                <option value="vendidos">Más Vendidos</option>
-                <option value="precioMayor">Precio: Mayor a Menor</option>
-                <option value="precioMenor">Precio: Menor a Mayor</option>
-                <option value="a">A-Z</option>
-                <option value="z">Z-A</option>
-                <option value="nuevo">Más Nuevo al más Viejo</option>
-                <option value="viejo">Más Viejo al más Nuevo</option>
-            </select>
-        </form>
-        <article class="container__productos">
-        <div class="producto">
-            <img src="../multimedia/producto5.png" alt="imagen-labial">
-            <h4>IT'S THE GLOSS FOR ME LIP SHINE LACQUER</h4>
-            <p>$1240 <span>$1600</span></p>
-            <button>AÑADIR AL CARRITO</button>
+
+    <section class="row container__cosmeticos">
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 titulo__cosmeticos">
+            <h3>LABIOS</h3>
         </div>
-        <div class="producto">
-            <img src="../multimedia/producto1.png" alt="imagen-labial">
-            <h4>EVERYTHING AND MORE LIP SHINE LACQUER</h4>
-            <p>$1240 <span>$1600</span></p>
-            <button>AÑADIR AL CARRITO</button>
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ordenar">
+            <form>
+                <label for="secciones">Ordenar por:</label>
+                <select name="secciones">
+                    <option value="vendidos">Más Vendidos</option>
+                    <option value="precioMayor">Precio: Mayor a Menor</option>
+                    <option value="precioMenor">Precio: Menor a Mayor</option>
+                    <option value="a">A-Z</option>
+                    <option value="z">Z-A</option>
+                    <option value="nuevo">Más Nuevo al más Viejo</option>
+                    <option value="viejo">Más Viejo al más Nuevo</option>
+                </select>
+            </form>
         </div>
-        <div class="producto carrusel-mobile">
-            <img src="../multimedia/producto2.png" alt="imagen-labial">
-            <h4>FELT CUTE LIP SHINE LACQUER</h4>
-            <p>$1240<span>$1600</span></p>
-            <button>AÑADIR AL CARRITO</button>
+
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card producto">
+            <div class="card-img-top imagen__productoUno"></div>
+            <div class="card-body card__producto">
+                <h5 class="card-title">EVERYTHING AND MORE LIP SHINE LACQUER</h5>
+                <p class="card-text">$1240 <span>$1600</span></p>
+                <a href="#" class="btn btn-primary">AÑADIR AL CARRITO</a>
+            </div>
         </div>
-        <div class="producto carrusel-mobile">
-            <img src="../multimedia/producto3.png" alt="imagen-labial">
-            <h4>DON'T @ ME LIP SHINE LACQUER</h4>
-            <p>$1240 <span>$1600</span></p>
-            <button>AÑADIR AL CARRITO</button>
+
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card producto">
+            <div class="card-img-top imagen__productoDos"></div>
+            <div class="card-body card__producto">
+                <h5 class="card-title">FELT CUTE LIP SHINE LACQUER</h5>
+                <p class="card-text">$1240 <span>$1600</span></p>
+                <a href="#" class="btn btn-primary">AÑADIR AL CARRITO</a>
+            </div>
         </div>
-        <div class="producto carrusel-mobile">
-            <img src="../multimedia/producto4.png" alt="imagen-labial">
-            <h4>YOU'RE CUTE JEANS LIP SHINE LACQUER</h4>
-            <p>$1240 <span>$1600</span></p>
-            <button>AÑADIR AL CARRITO</button>
+
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card producto">
+            <div class="card-img-top imagen__productoTres"></div>
+            <div class="card-body card__producto">
+                <h5 class="card-title">DON'T @ ME LIP SHINE LACQUER</h5>
+                <p class="card-text">$1240 <span>$1600</span></p>
+                <a href="#" class="btn btn-primary">AÑADIR AL CARRITO</a>
+            </div>
         </div>
-        <div class="producto carrusel-mobile">
-            <img src="../multimedia/producto6.png" alt="imagen-labial">
-            <h4>LOVE BITE MATTE LIQUID LIPSTICK</h4>
-            <p>$1240 <span>$1600</span></p>
-            <button>AÑADIR AL CARRITO</button>
+
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card producto">
+            <div class="card-img-top imagen__productoCuatro"></div>
+            <div class="card-body card__producto">
+                <h5 class="card-title">YOU'RE CUTE JEANS LIP SHINE LACQUER</h5>
+                <p class="card-text">$1240 <span>$1600</span></p>
+                <a href="#" class="btn btn-primary">AÑADIR AL CARRITO</a>
+            </div>
         </div>
-        <div class="producto carrusel-mobile">
-            <img src="../multimedia/producto7.png" alt="imagen-labial">
-            <h4>CALL ME MATTE LIQUID LIPSTICK</h4>
-            <p>$1240 <span>$1600</span></p>
-            <button>AÑADIR AL CARRITO</button>
+
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card cosmetico">
+            <div class="card-img-top imagen__cosmeticoUno"></div>
+            <div class="card-body card__producto">
+                <h5 class="card-title">IT'S THE GLOSS FOR ME LIP SHINE LACQUER</h5>
+                <p class="card-text">$1240 <span>$1600</span></p>
+                <a href="#" class="btn btn-primary">AÑADIR AL CARRITO</a>
+            </div>
         </div>
-        <div class="producto carrusel-mobile">
-            <img src="../multimedia/producto8.png" alt="imagen-labial">
-            <h4>KRISTEN MATTE LIQUID LIPSTICK</h4>
-            <p>$1240 <span>$1600</span></p>
-            <button>AÑADIR AL CARRITO</button>
+
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card cosmetico">
+            <div class="card-img-top imagen__cosmeticoDos"></div>
+            <div class="card-body card__producto">
+                <h5 class="card-title">LOVE BITE MATTE LIQUID LIPSTICK</h5>
+                <p class="card-text">$3000 <span>$3800</span></p>
+                <a href="#" class="btn btn-primary">AÑADIR AL CARRITO</a>
+            </div>
         </div>
-    </article>
+
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card cosmetico">
+            <div class="card-img-top imagen__cosmeticoTres"></div>
+            <div class="card-body card__producto">
+                <h5 class="card-title">CALL ME MATTE LIQUID LIPSTICK</h5>
+                <p class="card-text">$3000 <span>$3800</span></p>
+                <a href="#" class="btn btn-primary">AÑADIR AL CARRITO</a>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 card cosmetico">
+            <div class="card-img-top imagen__cosmeticoCuatro"></div>
+            <div class="card-body card__producto">
+                <h5 class="card-title">KRISTEN MATTE LIQUID LIPSTICK</h5>
+                <p class="card-text">$3000 <span>$3800</span></p>
+                <a href="#" class="btn btn-primary">AÑADIR AL CARRITO</a>
+            </div>
+        </div>
     </section>
+
     <div>
         <img src="../multimedia/whatsapp1.png" alt="icono-whatsapp" class="whatsapp__icono">
     </div>
-    <footer>
-        <p>Política de Privacidad | Términos de Uso</p>
-        <p>Copyright &copy; Antonella's Cosmetics 2022</p>
+
+    <footer class="row">
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+            <i class="fa-brands fa-instagram icono__footer"></i>
+            <i class="fa-brands fa-twitter icono__footer"></i>
+            <i class="fa-brands fa-facebook-square icono__footer"></i>
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+            <p>Política de Privacidad | Términos de Uso </p>
+            <p>Copyright &copy; Antonella's Cosmetics 2022</p>
+        </div>
     </footer>
+
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
